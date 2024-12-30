@@ -1,0 +1,29 @@
+<!-- Methods and Functions -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Project one</title>
+</head>
+<body>
+    <div id="app">
+        {{message()}}
+    </div>
+</body>
+<script>
+    const { createApp } = Vue;
+    createApp({
+        setup(){
+            
+            function message(){
+                return 'Message from function'
+            }
+
+            return {
+                message
+            }
+        }
+    }).mount('#app')
+</script>
+</html>
